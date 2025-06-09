@@ -2,8 +2,9 @@
 
 A comprehensive full-stack application for managing employee records, implemented with Spring Boot, MySQL, and React. This system supports all CRUD operations and is actively utilized by a community sports club for member management.
 
-
 ---
+
+
 
 ### Introduction
 
@@ -61,44 +62,41 @@ This **Employee Management System** is a robust, full-stack solution designed to
 | PUT    | `/api/employees/{id}` | Update an existing employee record |
 | DELETE | `/api/employees/{id}` | Remove an employee record          |
 
+---
+
 
 
 
 ### Installation & Usage
 
-Follow the steps below to run the application on your local machine:
+To run the full application from this single repository, follow the steps below:
 
-1. **Clone the repositories**
+1. **Clone the repository**
 
    ```bash
-   # Clone back-end repository
    git clone https://github.com/sohelkureshi/Employee-Management-System.git
    cd Employee-Management-System
-
-   # Clone front-end repository in parent directory
-   cd ..
-   git clone https://github.com/sohelkureshi/Employee-Management-Frontend.git
    ```
 
 2. **Back-End Setup**
 
-   * Ensure you have **JDK 17+** and **Maven** installed on your system.
-   * Open `Employee-Management-System/src/main/resources/application.properties` and configure your MySQL credentials (URL, username, password).
-   * Navigate to the back-end directory and start the Spring Boot application:
+   * Ensure **JDK 17+** and **Maven** are installed.
+   * Edit `backend/src/main/resources/application.properties` to supply your MySQL connection details (URL, username, password).
+   * Navigate to the back-end folder and launch the Spring Boot server:
 
      ```bash
-     cd Employee-Management-System
+     cd backend
      mvn clean install
      mvn spring-boot:run
      ```
 
 3. **Front-End Setup**
 
-   * Install **Node.js** (v14+) and **npm** if not already installed.
-   * Navigate to the front-end directory:
+   * Ensure **Node.js** (v14+) and **npm** are installed.
+   * Navigate to the front-end folder:
 
      ```bash
-     cd ../Employee-Management-Frontend
+     cd ../frontend
      ```
    * Install dependencies and start the React development server:
 
@@ -113,11 +111,3 @@ Follow the steps below to run the application on your local machine:
    * Front-end Client: `http://localhost:3000`
 
 ---
-
-The application can be deployed to cloud platforms such as **Render**, **Heroku**, or **Vercel**. Ensure that environment variables and production database credentials are configured appropriately in the deployment settings.
-
----
-
-### Contact
-
-For additional information or inquiries, please visit my GitHub profile: [https://github.com/sohelkureshi](https://github.com/sohelkureshi)
