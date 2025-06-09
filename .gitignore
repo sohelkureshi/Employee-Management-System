@@ -1,5 +1,5 @@
 # === Global / OS Files ===
-# Windows thumbnail cache files
+# Windows thumbnail/cache files
 Thumbs.db
 ehthumbs.db
 
@@ -13,28 +13,23 @@ ehthumbs.db
 # Log files
 *.log
 
-# Package files
+# Package archives
 *.jar
 *.war
 *.ear
 
-# Maven target directory
-/target/
+# Maven build output
+/backend/target/
 
-# IntelliJ IDEA project files
+# IDE files (IntelliJ, Eclipse, VSCode)
 .idea/
 /*.iml
-out/
-
-# VS Code settings
 .vscode/
-
-# Eclipse project files
 .project
 .classpath
 .settings/
 
-# === Node.js / React ===
+# === Node.js / React Front-End ===
 # Dependencies
 /frontend/node_modules/
 /frontend/.pnp/
@@ -51,29 +46,19 @@ out/
 /frontend/yarn-debug.log*
 /frontend/yarn-error.log*
 
-# Environment files
+# Environment variables
 /frontend/.env
 /frontend/.env.local
 /frontend/.env.development.local
 /frontend/.env.test.local
 /frontend/.env.production.local
 
-# Editor directories and files
+# IDE files (VSCode, WebStorm, etc.)
 /frontend/.vscode/
 /frontend/.idea/
 /frontend/*.sublime-workspace
 /frontend/*.sublime-project
 
-# === Optional: Coverage reports ===
+# Coverage reports
 /coverage/
 /frontend/coverage/
-
-# === Optional: IDE-specific ===
-# Rider
-/.idea/
-/*.sln
-/*.csproj
-
-# === Others ===
-# If you ever generate docs or other artifacts, ignore here:
-# /docs/
